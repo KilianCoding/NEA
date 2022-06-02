@@ -1,0 +1,16 @@
+D:\Github\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.exe
+D:\Github\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.deps.json
+D:\Github\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.runtimeconfig.json
+D:\Github\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.runtimeconfig.dev.json
+D:\Github\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.dll
+D:\Github\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.pdb
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.AssemblyReference.cache
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.formTill.resources
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.GenerateResource.cache
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.AssemblyInfoInputs.cache
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.AssemblyInfo.cs
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.CoreCompileInputs.cache
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.dll
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.pdb
+D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.genruntimeconfig.cache

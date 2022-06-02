@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 namespace NEA_Prototype_1
 {
-    public partial class Form1 : Form
+    public partial class formTill : Form
     {
-        public Form1()
+        public formTill()
         {
             InitializeComponent();
         }
 
     }
 }
+
+//Add a bunch of items to the panel and see if it can scroll infinitely
