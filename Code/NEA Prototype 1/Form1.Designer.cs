@@ -36,9 +36,6 @@ namespace NEA_Prototype_1
             this.btnItem2 = new System.Windows.Forms.Button();
             this.btnItem3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // staticlblTillTitle
@@ -68,6 +65,7 @@ namespace NEA_Prototype_1
             this.btnItem1.TabIndex = 2;
             this.btnItem1.Text = "Item 1 ";
             this.btnItem1.UseVisualStyleBackColor = true;
+            this.btnItem1.Click += new System.EventHandler(this.btnItem1_Click);
             // 
             // lblCurrentTotal
             // 
@@ -99,31 +97,11 @@ namespace NEA_Prototype_1
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(588, 9);
+            this.panel1.AutoScrollMinSize = new System.Drawing.Size(10, 10);
+            this.panel1.Location = new System.Drawing.Point(345, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 429);
+            this.panel1.Size = new System.Drawing.Size(200, 300);
             this.panel1.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             // 
             // formTill
             // 
@@ -139,8 +117,6 @@ namespace NEA_Prototype_1
             this.Controls.Add(this.staticlblTillTitle);
             this.Name = "formTill";
             this.Text = "Till";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,8 +131,6 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.Button btnItem2;
         private System.Windows.Forms.Button btnItem3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
     }
 }
 
