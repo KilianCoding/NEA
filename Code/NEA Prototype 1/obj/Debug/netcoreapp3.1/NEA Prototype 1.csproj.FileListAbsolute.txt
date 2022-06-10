@@ -14,3 +14,19 @@ D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.cspro
 D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.dll
 D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.pdb
 D:\Github\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.genruntimeconfig.cache
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.exe
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.deps.json
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.runtimeconfig.json
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.runtimeconfig.dev.json
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\NEA Prototype 1.pdb
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.AssemblyReference.cache
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.formTill.resources
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.GenerateResource.cache
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.AssemblyInfoInputs.cache
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.AssemblyInfo.cs
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.CoreCompileInputs.cache
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.pdb
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.genruntimeconfig.cache

@@ -35,86 +35,95 @@ namespace NEA_Prototype_1
             this.lblCurrentTotal = new System.Windows.Forms.Label();
             this.btnItem2 = new System.Windows.Forms.Button();
             this.btnItem3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelBasket = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // staticlblTillTitle
             // 
             this.staticlblTillTitle.AutoSize = true;
             this.staticlblTillTitle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.staticlblTillTitle.Location = new System.Drawing.Point(154, 9);
+            this.staticlblTillTitle.Location = new System.Drawing.Point(176, 12);
             this.staticlblTillTitle.Name = "staticlblTillTitle";
-            this.staticlblTillTitle.Size = new System.Drawing.Size(37, 28);
+            this.staticlblTillTitle.Size = new System.Drawing.Size(46, 35);
             this.staticlblTillTitle.TabIndex = 0;
             this.staticlblTillTitle.Text = "Till";
             // 
             // btnCheckout
             // 
-            this.btnCheckout.Location = new System.Drawing.Point(125, 150);
+            this.btnCheckout.Location = new System.Drawing.Point(143, 200);
+            this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(97, 42);
+            this.btnCheckout.Size = new System.Drawing.Size(111, 56);
             this.btnCheckout.TabIndex = 1;
             this.btnCheckout.Text = "Checkout";
             this.btnCheckout.UseVisualStyleBackColor = true;
             // 
             // btnItem1
             // 
-            this.btnItem1.Location = new System.Drawing.Point(32, 54);
+            this.btnItem1.Location = new System.Drawing.Point(37, 72);
+            this.btnItem1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnItem1.Name = "btnItem1";
-            this.btnItem1.Size = new System.Drawing.Size(92, 32);
+            this.btnItem1.Size = new System.Drawing.Size(105, 43);
             this.btnItem1.TabIndex = 2;
             this.btnItem1.Text = "Item 1 ";
             this.btnItem1.UseVisualStyleBackColor = true;
-            this.btnItem1.Click += new System.EventHandler(this.btnItem1_Click);
+            this.btnItem1.Click += new System.EventHandler(this.AddItemToList);
             // 
             // lblCurrentTotal
             // 
             this.lblCurrentTotal.AutoSize = true;
-            this.lblCurrentTotal.Location = new System.Drawing.Point(125, 132);
+            this.lblCurrentTotal.Location = new System.Drawing.Point(143, 176);
             this.lblCurrentTotal.Name = "lblCurrentTotal";
-            this.lblCurrentTotal.Size = new System.Drawing.Size(93, 15);
+            this.lblCurrentTotal.Size = new System.Drawing.Size(117, 20);
             this.lblCurrentTotal.TabIndex = 3;
             this.lblCurrentTotal.Text = "Current Total: £0";
             // 
             // btnItem2
             // 
-            this.btnItem2.Location = new System.Drawing.Point(130, 54);
+            this.btnItem2.AutoSize = true;
+            this.btnItem2.Location = new System.Drawing.Point(149, 72);
+            this.btnItem2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnItem2.Name = "btnItem2";
-            this.btnItem2.Size = new System.Drawing.Size(92, 32);
+            this.btnItem2.Size = new System.Drawing.Size(105, 43);
             this.btnItem2.TabIndex = 4;
             this.btnItem2.Text = "Item 2";
             this.btnItem2.UseVisualStyleBackColor = true;
+            this.btnItem2.Click += new System.EventHandler(this.AddItemToList);
             // 
             // btnItem3
             // 
-            this.btnItem3.Location = new System.Drawing.Point(228, 54);
+            this.btnItem3.Location = new System.Drawing.Point(261, 72);
+            this.btnItem3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnItem3.Name = "btnItem3";
-            this.btnItem3.Size = new System.Drawing.Size(92, 32);
+            this.btnItem3.Size = new System.Drawing.Size(105, 43);
             this.btnItem3.TabIndex = 5;
             this.btnItem3.Text = "Item 3";
             this.btnItem3.UseVisualStyleBackColor = true;
+            this.btnItem3.Click += new System.EventHandler(this.AddItemToList);
             // 
-            // panel1
+            // panelBasket
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.AutoScrollMinSize = new System.Drawing.Size(10, 10);
-            this.panel1.Location = new System.Drawing.Point(345, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 300);
-            this.panel1.TabIndex = 6;
+            this.panelBasket.AutoScroll = true;
+            this.panelBasket.AutoScrollMinSize = new System.Drawing.Size(10, 10);
+            this.panelBasket.Location = new System.Drawing.Point(394, 16);
+            this.panelBasket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelBasket.Name = "panelBasket";
+            this.panelBasket.Size = new System.Drawing.Size(229, 400);
+            this.panelBasket.TabIndex = 6;
             // 
             // formTill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.Controls.Add(this.panelBasket);
             this.Controls.Add(this.btnItem3);
             this.Controls.Add(this.btnItem2);
             this.Controls.Add(this.lblCurrentTotal);
             this.Controls.Add(this.btnItem1);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.staticlblTillTitle);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formTill";
             this.Text = "Till";
             this.ResumeLayout(false);
@@ -130,7 +139,7 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.Label lblCurrentTotal;
         private System.Windows.Forms.Button btnItem2;
         private System.Windows.Forms.Button btnItem3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelBasket;
     }
 }
 

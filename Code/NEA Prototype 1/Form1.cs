@@ -22,24 +22,36 @@ namespace NEA_Prototype_1
             InitializeComponent();
         }
 
-        private void btnItem1_Click(object sender, EventArgs e)
+        private void AddItemToList(object sender, EventArgs e)
         {
-            CheckoutItems temp = new CheckoutItems("test label", .4f);
+            float price = 0f; //A temporary way of giving each item a price. 
+            switch ((sender as Button).Name) 
+            {
+                case "btnItem1":
+                    price = 50.99f;
+                    break;
+                case "btnItem2":
+                    price = 8.99f;
+                    break;
+                case "btnItem3":
+                    price = 24.99f;
+                    break;
+            }
+            CheckoutItems temp = new CheckoutItems(((sender as Button).Name).Remove(0,3), price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
             CheckoutList.Add(temp); //Adds the item to the list
 
             Label lbl = new Label(); //Creates a label with the name and price of the item, placing it into a panel
-            lbl.Name = temp.getsetItemName; //Using a panel allows you to scroll through the list whilst nto moving the whole window
+            lbl.Name = temp.getsetItemName; //Using a panel allows you to scroll through the list without moving the whole window
             lbl.Text = temp.getsetItemName + (" £") + temp.getsetItemPrice.ToString();
             lbl.Location = new Point(0, yPos); 
-            lbl.BringToFront();
-            panel1.Controls.Add(lbl);
+            panelBasket.Controls.Add(lbl); //Adds the label the basket panel
 
-            yPos = yPos + 20; //By incrementing yPos, the next item will be placed below the previous
+            yPos += 20; //By incrementing by 20 yPos, the next item will be placed below the previous
         }
-        #endregion
-
     }
-    
+        #endregion
+}
+
     public class CheckoutItems //Class for adding items to the list
     {
         private string itemName;
@@ -60,5 +72,5 @@ namespace NEA_Prototype_1
             set { itemPrice = value; }
         }
     }
-}
+
 
