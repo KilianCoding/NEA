@@ -46,6 +46,9 @@ namespace NEA_Prototype_1
             lbl.Location = new Point(0, yPos); 
             panelBasket.Controls.Add(lbl); //Adds the label the basket panel
 
+            dgvBasket.Rows.Add("ID", (sender as Button).Name, price, "count", "Remove");
+            _ = dgvColumnRemove.UseColumnTextForButtonValue;
+
             yPos += 20; //By incrementing by 20 yPos, the next item will be placed below the previous
         }
     }

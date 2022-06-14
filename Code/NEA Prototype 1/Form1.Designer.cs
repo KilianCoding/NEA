@@ -36,6 +36,20 @@ namespace NEA_Prototype_1
             this.btnItem2 = new System.Windows.Forms.Button();
             this.btnItem3 = new System.Windows.Forms.Button();
             this.panelBasket = new System.Windows.Forms.Panel();
+            this.dgvBasket = new System.Windows.Forms.DataGridView();
+            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adasdasda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnRemove = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).BeginInit();
             this.SuspendLayout();
             // 
             // staticlblTillTitle
@@ -108,14 +122,132 @@ namespace NEA_Prototype_1
             this.panelBasket.Location = new System.Drawing.Point(394, 16);
             this.panelBasket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelBasket.Name = "panelBasket";
-            this.panelBasket.Size = new System.Drawing.Size(229, 400);
+            this.panelBasket.Size = new System.Drawing.Size(229, 188);
             this.panelBasket.TabIndex = 6;
+            // 
+            // dgvBasket
+            // 
+            this.dgvBasket.AllowUserToAddRows = false;
+            this.dgvBasket.AllowUserToDeleteRows = false;
+            this.dgvBasket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBasket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvColumnID,
+            this.dgvColumnItem,
+            this.dgvColumnPrice,
+            this.dgvColumnQuantity,
+            this.dgvColumnRemove});
+            this.dgvBasket.Location = new System.Drawing.Point(37, 263);
+            this.dgvBasket.Name = "dgvBasket";
+            this.dgvBasket.ReadOnly = true;
+            this.dgvBasket.RowHeadersWidth = 51;
+            this.dgvBasket.RowTemplate.Height = 29;
+            this.dgvBasket.Size = new System.Drawing.Size(680, 277);
+            this.dgvBasket.TabIndex = 7;
+            // 
+            // Item
+            // 
+            this.Item.HeaderText = "Item";
+            this.Item.MinimumWidth = 6;
+            this.Item.Name = "Item";
+            this.Item.ReadOnly = true;
+            this.Item.Width = 125;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            this.Price.Width = 125;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            this.Quantity.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Item";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Quantity";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // adasdasda
+            // 
+            this.adasdasda.HeaderText = "Coasdsadsadlumn1";
+            this.adasdasda.MinimumWidth = 6;
+            this.adasdasda.Name = "adasdasda";
+            this.adasdasda.ReadOnly = true;
+            this.adasdasda.Width = 125;
+            // 
+            // dgvColumnID
+            // 
+            this.dgvColumnID.HeaderText = "ID";
+            this.dgvColumnID.MinimumWidth = 6;
+            this.dgvColumnID.Name = "dgvColumnID";
+            this.dgvColumnID.ReadOnly = true;
+            this.dgvColumnID.Width = 125;
+            // 
+            // dgvColumnItem
+            // 
+            this.dgvColumnItem.HeaderText = "Item";
+            this.dgvColumnItem.MinimumWidth = 6;
+            this.dgvColumnItem.Name = "dgvColumnItem";
+            this.dgvColumnItem.ReadOnly = true;
+            this.dgvColumnItem.Width = 125;
+            // 
+            // dgvColumnPrice
+            // 
+            this.dgvColumnPrice.HeaderText = "Price";
+            this.dgvColumnPrice.MinimumWidth = 6;
+            this.dgvColumnPrice.Name = "dgvColumnPrice";
+            this.dgvColumnPrice.ReadOnly = true;
+            this.dgvColumnPrice.Width = 125;
+            // 
+            // dgvColumnQuantity
+            // 
+            this.dgvColumnQuantity.HeaderText = "Quantity";
+            this.dgvColumnQuantity.MinimumWidth = 6;
+            this.dgvColumnQuantity.Name = "dgvColumnQuantity";
+            this.dgvColumnQuantity.ReadOnly = true;
+            this.dgvColumnQuantity.Width = 125;
+            // 
+            // dgvColumnRemove
+            // 
+            this.dgvColumnRemove.HeaderText = "Remove Item";
+            this.dgvColumnRemove.MinimumWidth = 6;
+            this.dgvColumnRemove.Name = "dgvColumnRemove";
+            this.dgvColumnRemove.ReadOnly = true;
+            this.dgvColumnRemove.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvColumnRemove.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dgvColumnRemove.Width = 125;
             // 
             // formTill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.ClientSize = new System.Drawing.Size(943, 600);
+            this.Controls.Add(this.dgvBasket);
             this.Controls.Add(this.panelBasket);
             this.Controls.Add(this.btnItem3);
             this.Controls.Add(this.btnItem2);
@@ -126,6 +258,7 @@ namespace NEA_Prototype_1
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formTill";
             this.Text = "Till";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,6 +273,19 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.Button btnItem2;
         private System.Windows.Forms.Button btnItem3;
         private System.Windows.Forms.Panel panelBasket;
+        private System.Windows.Forms.DataGridView dgvBasket;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adasdasda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnQuantity;
+        private System.Windows.Forms.DataGridViewButtonColumn dgvColumnRemove;
     }
 }
 
