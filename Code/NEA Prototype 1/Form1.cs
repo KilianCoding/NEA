@@ -40,16 +40,21 @@ namespace NEA_Prototype_1
             CheckoutItems temp = new CheckoutItems(((sender as Button).Name).Remove(0,3), price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
             CheckoutList.Add(temp); //Adds the item to the list
 
-            Label lbl = new Label(); //Creates a label with the name and price of the item, placing it into a panel
+            /* Label lbl = new Label(); //Creates a label with the name and price of the item, placing it into a panel
             lbl.Name = temp.getsetItemName; //Using a panel allows you to scroll through the list without moving the whole window
             lbl.Text = temp.getsetItemName + (" £") + temp.getsetItemPrice.ToString();
             lbl.Location = new Point(0, yPos); 
             panelBasket.Controls.Add(lbl); //Adds the label the basket panel
+            yPos += 20; //By incrementing by 20 yPos, the next item will be placed below the previous */
 
-            dgvBasket.Rows.Add("ID", (sender as Button).Name, price, "count", "Remove");
-            _ = dgvColumnRemove.UseColumnTextForButtonValue;
-
-            yPos += 20; //By incrementing by 20 yPos, the next item will be placed below the previous
+            dgvBasket.Rows.Add("ID", (sender as Button).Name, price, "count", "Remove"); //Adds a row in the grid
+            _ = dgvColumnRemove.UseColumnTextForButtonValue; //Creates a button in the remove column with the text in that column, in this case, remove
+        }
+        private void dgvBasket_CellClicked(object sender, DataGridViewCellEventArgs e)
+        {
+            /*Int32 selectedRowCount = dgvBasket.Rows.GetRowCount(DataGridViewElementStates.Selected);
+            dgvBasket.Rows.RemoveAt(temp.Rows);
+            var temp = (DataGridView)sender;*/
         }
     }
         #endregion

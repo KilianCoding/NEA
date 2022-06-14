@@ -37,6 +37,11 @@ namespace NEA_Prototype_1
             this.btnItem3 = new System.Windows.Forms.Button();
             this.panelBasket = new System.Windows.Forms.Panel();
             this.dgvBasket = new System.Windows.Forms.DataGridView();
+            this.dgvColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvColumnRemove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +49,6 @@ namespace NEA_Prototype_1
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adasdasda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnRemove = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,28 +56,26 @@ namespace NEA_Prototype_1
             // 
             this.staticlblTillTitle.AutoSize = true;
             this.staticlblTillTitle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.staticlblTillTitle.Location = new System.Drawing.Point(176, 12);
+            this.staticlblTillTitle.Location = new System.Drawing.Point(154, 9);
             this.staticlblTillTitle.Name = "staticlblTillTitle";
-            this.staticlblTillTitle.Size = new System.Drawing.Size(46, 35);
+            this.staticlblTillTitle.Size = new System.Drawing.Size(37, 28);
             this.staticlblTillTitle.TabIndex = 0;
             this.staticlblTillTitle.Text = "Till";
             // 
             // btnCheckout
             // 
-            this.btnCheckout.Location = new System.Drawing.Point(143, 200);
-            this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCheckout.Location = new System.Drawing.Point(125, 150);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(111, 56);
+            this.btnCheckout.Size = new System.Drawing.Size(97, 42);
             this.btnCheckout.TabIndex = 1;
             this.btnCheckout.Text = "Checkout";
             this.btnCheckout.UseVisualStyleBackColor = true;
             // 
             // btnItem1
             // 
-            this.btnItem1.Location = new System.Drawing.Point(37, 72);
-            this.btnItem1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnItem1.Location = new System.Drawing.Point(32, 54);
             this.btnItem1.Name = "btnItem1";
-            this.btnItem1.Size = new System.Drawing.Size(105, 43);
+            this.btnItem1.Size = new System.Drawing.Size(92, 32);
             this.btnItem1.TabIndex = 2;
             this.btnItem1.Text = "Item 1 ";
             this.btnItem1.UseVisualStyleBackColor = true;
@@ -86,19 +84,18 @@ namespace NEA_Prototype_1
             // lblCurrentTotal
             // 
             this.lblCurrentTotal.AutoSize = true;
-            this.lblCurrentTotal.Location = new System.Drawing.Point(143, 176);
+            this.lblCurrentTotal.Location = new System.Drawing.Point(125, 132);
             this.lblCurrentTotal.Name = "lblCurrentTotal";
-            this.lblCurrentTotal.Size = new System.Drawing.Size(117, 20);
+            this.lblCurrentTotal.Size = new System.Drawing.Size(93, 15);
             this.lblCurrentTotal.TabIndex = 3;
             this.lblCurrentTotal.Text = "Current Total: £0";
             // 
             // btnItem2
             // 
             this.btnItem2.AutoSize = true;
-            this.btnItem2.Location = new System.Drawing.Point(149, 72);
-            this.btnItem2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnItem2.Location = new System.Drawing.Point(130, 54);
             this.btnItem2.Name = "btnItem2";
-            this.btnItem2.Size = new System.Drawing.Size(105, 43);
+            this.btnItem2.Size = new System.Drawing.Size(92, 32);
             this.btnItem2.TabIndex = 4;
             this.btnItem2.Text = "Item 2";
             this.btnItem2.UseVisualStyleBackColor = true;
@@ -106,10 +103,9 @@ namespace NEA_Prototype_1
             // 
             // btnItem3
             // 
-            this.btnItem3.Location = new System.Drawing.Point(261, 72);
-            this.btnItem3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnItem3.Location = new System.Drawing.Point(228, 54);
             this.btnItem3.Name = "btnItem3";
-            this.btnItem3.Size = new System.Drawing.Size(105, 43);
+            this.btnItem3.Size = new System.Drawing.Size(92, 32);
             this.btnItem3.TabIndex = 5;
             this.btnItem3.Text = "Item 3";
             this.btnItem3.UseVisualStyleBackColor = true;
@@ -119,10 +115,9 @@ namespace NEA_Prototype_1
             // 
             this.panelBasket.AutoScroll = true;
             this.panelBasket.AutoScrollMinSize = new System.Drawing.Size(10, 10);
-            this.panelBasket.Location = new System.Drawing.Point(394, 16);
-            this.panelBasket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelBasket.Location = new System.Drawing.Point(345, 12);
             this.panelBasket.Name = "panelBasket";
-            this.panelBasket.Size = new System.Drawing.Size(229, 188);
+            this.panelBasket.Size = new System.Drawing.Size(200, 141);
             this.panelBasket.TabIndex = 6;
             // 
             // dgvBasket
@@ -136,13 +131,57 @@ namespace NEA_Prototype_1
             this.dgvColumnPrice,
             this.dgvColumnQuantity,
             this.dgvColumnRemove});
-            this.dgvBasket.Location = new System.Drawing.Point(37, 263);
+            this.dgvBasket.Location = new System.Drawing.Point(32, 197);
+            this.dgvBasket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBasket.Name = "dgvBasket";
             this.dgvBasket.ReadOnly = true;
             this.dgvBasket.RowHeadersWidth = 51;
             this.dgvBasket.RowTemplate.Height = 29;
-            this.dgvBasket.Size = new System.Drawing.Size(680, 277);
+            this.dgvBasket.Size = new System.Drawing.Size(679, 208);
             this.dgvBasket.TabIndex = 7;
+            this.dgvBasket.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBasket_CellClicked);
+            // 
+            // dgvColumnID
+            // 
+            this.dgvColumnID.HeaderText = "ID";
+            this.dgvColumnID.MinimumWidth = 6;
+            this.dgvColumnID.Name = "dgvColumnID";
+            this.dgvColumnID.ReadOnly = true;
+            this.dgvColumnID.Width = 125;
+            // 
+            // dgvColumnItem
+            // 
+            this.dgvColumnItem.HeaderText = "Item";
+            this.dgvColumnItem.MinimumWidth = 6;
+            this.dgvColumnItem.Name = "dgvColumnItem";
+            this.dgvColumnItem.ReadOnly = true;
+            this.dgvColumnItem.Width = 125;
+            // 
+            // dgvColumnPrice
+            // 
+            this.dgvColumnPrice.HeaderText = "Price";
+            this.dgvColumnPrice.MinimumWidth = 6;
+            this.dgvColumnPrice.Name = "dgvColumnPrice";
+            this.dgvColumnPrice.ReadOnly = true;
+            this.dgvColumnPrice.Width = 125;
+            // 
+            // dgvColumnQuantity
+            // 
+            this.dgvColumnQuantity.HeaderText = "Quantity";
+            this.dgvColumnQuantity.MinimumWidth = 6;
+            this.dgvColumnQuantity.Name = "dgvColumnQuantity";
+            this.dgvColumnQuantity.ReadOnly = true;
+            this.dgvColumnQuantity.Width = 125;
+            // 
+            // dgvColumnRemove
+            // 
+            this.dgvColumnRemove.HeaderText = "Remove Item";
+            this.dgvColumnRemove.MinimumWidth = 6;
+            this.dgvColumnRemove.Name = "dgvColumnRemove";
+            this.dgvColumnRemove.ReadOnly = true;
+            this.dgvColumnRemove.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvColumnRemove.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dgvColumnRemove.Width = 125;
             // 
             // Item
             // 
@@ -200,53 +239,11 @@ namespace NEA_Prototype_1
             this.adasdasda.ReadOnly = true;
             this.adasdasda.Width = 125;
             // 
-            // dgvColumnID
-            // 
-            this.dgvColumnID.HeaderText = "ID";
-            this.dgvColumnID.MinimumWidth = 6;
-            this.dgvColumnID.Name = "dgvColumnID";
-            this.dgvColumnID.ReadOnly = true;
-            this.dgvColumnID.Width = 125;
-            // 
-            // dgvColumnItem
-            // 
-            this.dgvColumnItem.HeaderText = "Item";
-            this.dgvColumnItem.MinimumWidth = 6;
-            this.dgvColumnItem.Name = "dgvColumnItem";
-            this.dgvColumnItem.ReadOnly = true;
-            this.dgvColumnItem.Width = 125;
-            // 
-            // dgvColumnPrice
-            // 
-            this.dgvColumnPrice.HeaderText = "Price";
-            this.dgvColumnPrice.MinimumWidth = 6;
-            this.dgvColumnPrice.Name = "dgvColumnPrice";
-            this.dgvColumnPrice.ReadOnly = true;
-            this.dgvColumnPrice.Width = 125;
-            // 
-            // dgvColumnQuantity
-            // 
-            this.dgvColumnQuantity.HeaderText = "Quantity";
-            this.dgvColumnQuantity.MinimumWidth = 6;
-            this.dgvColumnQuantity.Name = "dgvColumnQuantity";
-            this.dgvColumnQuantity.ReadOnly = true;
-            this.dgvColumnQuantity.Width = 125;
-            // 
-            // dgvColumnRemove
-            // 
-            this.dgvColumnRemove.HeaderText = "Remove Item";
-            this.dgvColumnRemove.MinimumWidth = 6;
-            this.dgvColumnRemove.Name = "dgvColumnRemove";
-            this.dgvColumnRemove.ReadOnly = true;
-            this.dgvColumnRemove.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvColumnRemove.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dgvColumnRemove.Width = 125;
-            // 
             // formTill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 600);
+            this.ClientSize = new System.Drawing.Size(825, 450);
             this.Controls.Add(this.dgvBasket);
             this.Controls.Add(this.panelBasket);
             this.Controls.Add(this.btnItem3);
@@ -255,7 +252,6 @@ namespace NEA_Prototype_1
             this.Controls.Add(this.btnItem1);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.staticlblTillTitle);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formTill";
             this.Text = "Till";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).EndInit();
