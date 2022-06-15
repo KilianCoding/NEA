@@ -24,8 +24,11 @@ namespace NEA_Prototype_1
 
         private void AddItemToList(object sender, EventArgs e)
         {
+            Button btnPressed = sender as Button; //Sender is essentially just whatever runs the subroutine. In this case, only buttons can run the subroutine so
+                                                  //specifying doesn't make sense, but you could have multiple things running this subroutine, so you need to specify
             float price = 0f; //A temporary way of giving each item a price. 
-            switch ((sender as Button).Name) 
+
+            switch ((btnPressed).Name) 
             {
                 case "btnItem1":
                     price = 50.99f;
@@ -37,7 +40,7 @@ namespace NEA_Prototype_1
                     price = 24.99f;
                     break;
             }
-            CheckoutItems temp = new CheckoutItems(((sender as Button).Name).Remove(0,3), price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
+            CheckoutItems temp = new CheckoutItems((btnPressed.Name).Remove(0,3), price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
             CheckoutList.Add(temp); //Adds the item to the list
 
             /* Label lbl = new Label(); //Creates a label with the name and price of the item, placing it into a panel
@@ -47,14 +50,17 @@ namespace NEA_Prototype_1
             panelBasket.Controls.Add(lbl); //Adds the label the basket panel
             yPos += 20; //By incrementing by 20 yPos, the next item will be placed below the previous */
 
-            dgvBasket.Rows.Add("ID", (sender as Button).Name, price, "count", "Remove"); //Adds a row in the grid
+            dgvBasket.Rows.Add("ID", btnPressed.Name, price, "count", "Remove"); //Adds a row in the grid
             _ = dgvColumnRemove.UseColumnTextForButtonValue; //Creates a button in the remove column with the text in that column, in this case, remove
+            
+            
         }
-        private void dgvBasket_CellClicked(object sender, DataGridViewCellEventArgs e)
+        private void dgvBasket_CellClicked(object sender, DataGridViewCellEventArgs e) //e is essentially all the information about the dgvcell events
         {
-            /*Int32 selectedRowCount = dgvBasket.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            dgvBasket.Rows.RemoveAt(temp.Rows);
-            var temp = (DataGridView)sender;*/
+            if (e.RowIndex >= 0)
+            {
+                dgvBasket.Rows.RemoveAt(e.RowIndex); //e.RowIndex is the row which contians the button that has been pressed, removes this row
+            }
         }
     }
         #endregion
