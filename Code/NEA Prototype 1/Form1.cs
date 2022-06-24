@@ -15,7 +15,7 @@ namespace NEA_Prototype_1
     public partial class formTill : Form
     {
         private List<CheckoutItems> CheckoutList = new List<CheckoutItems>(); //A list of every item in "basket"
-        int yPos = 0; //Used to control the Y position when adding a label to the panel 
+        decimal total = 0; //Using decimal allows me to add decimals without everything breaking
 
         public formTill()
         {
@@ -26,34 +26,30 @@ namespace NEA_Prototype_1
         {
             Button btnPressed = sender as Button; //Sender is essentially just whatever runs the subroutine. In this case, only buttons can run the subroutine so
                                                   //specifying doesn't make sense, but you could have multiple things running this subroutine, so you need to specify
-            float price = 0f; //A temporary way of giving each item a price. 
+            decimal price = 0; //A temporary way of giving each item a price. 
 
             switch ((btnPressed).Name) 
             {
                 case "btnItem1":
-                    price = 50.99f;
+                    price = 50.99M;
                     break;
                 case "btnItem2":
-                    price = 8.99f;
+                    price = 8.99M;
                     break;
                 case "btnItem3":
-                    price = 24.99f;
+                    price = 24.99M;
                     break;
             }
-            CheckoutItems temp = new CheckoutItems((btnPressed.Name).Remove(0,3), price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
+            CheckoutItems temp = new CheckoutItems((btnPressed.Name).Remove(0,3),(float)price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
             CheckoutList.Add(temp); //Adds the item to the list
 
-            /* Label lbl = new Label(); //Creates a label with the name and price of the item, placing it into a panel
-            lbl.Name = temp.getsetItemName; //Using a panel allows you to scroll through the list without moving the whole window
-            lbl.Text = temp.getsetItemName + (" £") + temp.getsetItemPrice.ToString();
-            lbl.Location = new Point(0, yPos); 
-            panelBasket.Controls.Add(lbl); //Adds the label the basket panel
-            yPos += 20; //By incrementing by 20 yPos, the next item will be placed below the previous */
 
-            dgvBasket.Rows.Add("ID", btnPressed.Name, price, "count", "Remove"); //Adds a row in the grid
-            _ = dgvColumnRemove.UseColumnTextForButtonValue; //Creates a button in the remove column with the text in that column, in this case, remove
-            
-            
+            dgvBasket.Rows.Add("ID", btnPressed.Name, price, "Remove"); //Adds a row in the grid
+        _ = dgvColumnRemove.UseColumnTextForButtonValue; //Creates a button in the remove column with the text in that column, in this case, remove
+
+            total = total + price;
+            lblCurrentTotal.Text = ("Currrent total: £" + Convert.ToString(total));
+
         }
         private void dgvBasket_CellClicked(object sender, DataGridViewCellEventArgs e) //e is essentially all the information about the dgvcell events
         {
@@ -61,6 +57,11 @@ namespace NEA_Prototype_1
             {
                 dgvBasket.Rows.RemoveAt(e.RowIndex); //e.RowIndex is the row which contians the button that has been pressed, removes this row
             }
+        }
+
+        private void formTill_Load(object sender, EventArgs e)
+        {
+             
         }
     }
         #endregion

@@ -35,7 +35,6 @@ namespace NEA_Prototype_1
             this.lblCurrentTotal = new System.Windows.Forms.Label();
             this.btnItem2 = new System.Windows.Forms.Button();
             this.btnItem3 = new System.Windows.Forms.Button();
-            this.panelBasket = new System.Windows.Forms.Panel();
             this.dgvBasket = new System.Windows.Forms.DataGridView();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +45,6 @@ namespace NEA_Prototype_1
             this.dgvColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvColumnItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvColumnRemove = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).BeginInit();
             this.SuspendLayout();
@@ -114,33 +112,23 @@ namespace NEA_Prototype_1
             this.btnItem3.UseVisualStyleBackColor = true;
             this.btnItem3.Click += new System.EventHandler(this.AddItemToList);
             // 
-            // panelBasket
-            // 
-            this.panelBasket.AutoScroll = true;
-            this.panelBasket.AutoScrollMinSize = new System.Drawing.Size(10, 10);
-            this.panelBasket.Location = new System.Drawing.Point(394, 16);
-            this.panelBasket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelBasket.Name = "panelBasket";
-            this.panelBasket.Size = new System.Drawing.Size(229, 188);
-            this.panelBasket.TabIndex = 6;
-            // 
             // dgvBasket
             // 
             this.dgvBasket.AllowUserToAddRows = false;
             this.dgvBasket.AllowUserToDeleteRows = false;
+            this.dgvBasket.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvBasket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBasket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvColumnID,
             this.dgvColumnItem,
             this.dgvColumnPrice,
-            this.dgvColumnQuantity,
             this.dgvColumnRemove});
-            this.dgvBasket.Location = new System.Drawing.Point(22, 263);
+            this.dgvBasket.Location = new System.Drawing.Point(408, 12);
             this.dgvBasket.Name = "dgvBasket";
             this.dgvBasket.ReadOnly = true;
             this.dgvBasket.RowHeadersWidth = 51;
             this.dgvBasket.RowTemplate.Height = 29;
-            this.dgvBasket.Size = new System.Drawing.Size(776, 277);
+            this.dgvBasket.Size = new System.Drawing.Size(550, 277);
             this.dgvBasket.TabIndex = 7;
             this.dgvBasket.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBasket_CellClicked);
             // 
@@ -216,14 +204,6 @@ namespace NEA_Prototype_1
             this.dgvColumnPrice.ReadOnly = true;
             this.dgvColumnPrice.Width = 125;
             // 
-            // dgvColumnQuantity
-            // 
-            this.dgvColumnQuantity.HeaderText = "Quantity";
-            this.dgvColumnQuantity.MinimumWidth = 6;
-            this.dgvColumnQuantity.Name = "dgvColumnQuantity";
-            this.dgvColumnQuantity.ReadOnly = true;
-            this.dgvColumnQuantity.Width = 125;
-            // 
             // dgvColumnRemove
             // 
             this.dgvColumnRemove.HeaderText = "Remove Item";
@@ -238,9 +218,8 @@ namespace NEA_Prototype_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 600);
+            this.ClientSize = new System.Drawing.Size(1108, 600);
             this.Controls.Add(this.dgvBasket);
-            this.Controls.Add(this.panelBasket);
             this.Controls.Add(this.btnItem3);
             this.Controls.Add(this.btnItem2);
             this.Controls.Add(this.lblCurrentTotal);
@@ -250,6 +229,7 @@ namespace NEA_Prototype_1
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formTill";
             this.Text = "Till";
+            this.Load += new System.EventHandler(this.formTill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -264,7 +244,6 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.Label lblCurrentTotal;
         private System.Windows.Forms.Button btnItem2;
         private System.Windows.Forms.Button btnItem3;
-        private System.Windows.Forms.Panel panelBasket;
         private System.Windows.Forms.DataGridView dgvBasket;
         private System.Windows.Forms.DataGridViewTextBoxColumn Item;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
@@ -275,7 +254,6 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnQuantity;
         private System.Windows.Forms.DataGridViewButtonColumn dgvColumnRemove;
     }
 }
