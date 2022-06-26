@@ -53,10 +53,16 @@ namespace NEA_Prototype_1
         }
         private void dgvBasket_CellClicked(object sender, DataGridViewCellEventArgs e) //e is essentially all the information about the dgvcell events
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex >= 0 && dgvBasket.CurrentCell.Value.ToString() == "Remove") //Ensures you can't try to delete the top column, which causes an error
             {
+                total = total - Convert.ToDecimal(dgvBasket.CurrentRow.Cells[2].Value); //Gets the value of the cell in the second column of this row
+                lblCurrentTotal.Text = ("Currrent total: £" + Convert.ToString(total));
                 dgvBasket.Rows.RemoveAt(e.RowIndex); //e.RowIndex is the row which contians the button that has been pressed, removes this row
             }
+        }
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your total is £"+ total.ToString(), "Checkout");
         }
 
         private void formTill_Load(object sender, EventArgs e)
@@ -89,3 +95,5 @@ namespace NEA_Prototype_1
     }
 
 
+//Clicking multiple times on a cell deletes it, fixed by adding  && dgvBasket.CurrentCell.Value.ToString() == "Remove" to the if statement that runs when the cell is clicked
+//Add a button which resets the basket, make checkout do the same
