@@ -30,3 +30,4 @@ C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreap
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.dll
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.pdb
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.genruntimeconfig.cache
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.LoginForm.resources

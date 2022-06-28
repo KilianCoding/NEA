@@ -69,6 +69,13 @@ namespace NEA_Prototype_1
         {
              
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new LoginForm();
+            this.Hide();
+            form.Show();
+        }
     }
         #endregion
 }
