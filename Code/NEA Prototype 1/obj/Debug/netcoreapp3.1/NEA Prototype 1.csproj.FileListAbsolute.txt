@@ -31,3 +31,27 @@ C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreap
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.pdb
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.genruntimeconfig.cache
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.LoginForm.resources
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Data.OleDb.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.InventoryForm.resources
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.CopyComplete
