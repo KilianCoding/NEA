@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {}
+    "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {
+    "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
+        "projectUniqueName": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
         "projectName": "NEA Prototype 1",
-        "projectPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
+        "projectPath": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
         "packagesPath": "C:\\Users\\Kilia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\obj\\",
+        "outputPath": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Visual Studio\\Shared components, tools and SDKs\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Kilia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
