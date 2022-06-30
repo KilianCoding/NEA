@@ -47,6 +47,7 @@ namespace NEA_Prototype_1
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnTestDb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).BeginInit();
             this.SuspendLayout();
             // 
@@ -226,11 +227,22 @@ namespace NEA_Prototype_1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnTestDb
+            // 
+            this.btnTestDb.Location = new System.Drawing.Point(396, 412);
+            this.btnTestDb.Name = "btnTestDb";
+            this.btnTestDb.Size = new System.Drawing.Size(94, 29);
+            this.btnTestDb.TabIndex = 9;
+            this.btnTestDb.Text = "Test Database";
+            this.btnTestDb.UseVisualStyleBackColor = true;
+            this.btnTestDb.Click += new System.EventHandler(this.btnTestDb_Click);
+            // 
             // formTill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1109, 600);
+            this.Controls.Add(this.btnTestDb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvBasket);
             this.Controls.Add(this.btnItem3);
@@ -269,6 +281,7 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnPrice;
         private System.Windows.Forms.DataGridViewButtonColumn dgvColumnRemove;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTestDb;
     }
 }
 

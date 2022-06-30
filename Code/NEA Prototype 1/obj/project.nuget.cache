@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vwjUKdUJMBPaTKTH8fsBB9Y4A4wmvnb266Xv+eYZDp1oB0PJf7sTXc75IOKqgBMeU2CkXDhUe7tOArXXfyEuzQ==",
+  "dgSpecHash": "/bDZIUkMOXRzciLNV8tko/jiHkTz/As/jIF7w2bLBHaVqEv1QdI9nrib0Woit0uGTKd+lTR5+YfoYznjFOw8kQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
+  "projectFilePath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kilia\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Kilia\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

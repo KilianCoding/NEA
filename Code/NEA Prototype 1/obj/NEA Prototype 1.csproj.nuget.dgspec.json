@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {}
+    "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {}
   },
   "projects": {
-    "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {
+    "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
+        "projectUniqueName": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
         "projectName": "NEA Prototype 1",
-        "projectPath": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
+        "projectPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\NEA Prototype 1.csproj",
         "packagesPath": "C:\\Users\\Kilia\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\NEA\\Code\\NEA Prototype 1\\obj\\",
+        "outputPath": "C:\\Users\\Kilia\\OneDrive\\Desktop\\NEA\\NEA\\Code\\NEA Prototype 1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Visual Studio\\Shared components, tools and SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Kilia\\AppData\\Roaming\\NuGet\\NuGet.Config",
