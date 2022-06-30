@@ -81,7 +81,7 @@ namespace NEA_Prototype_1
 
         private void btnTestDb_Click(object sender, EventArgs e)
         {
-            DatabaseConnectivity DBcon = new DatabaseConnectivity();
+            DatabaseConnectivity DBcon = new DatabaseConnectivity(); //Creates insance of database class, runs a command
             DBcon.SalesCommand();
         }
     }
@@ -110,5 +110,4 @@ namespace NEA_Prototype_1
     }
 
 
-//Clicking multiple times on a cell deletes it, fixed by adding  && dgvBasket.CurrentCell.Value.ToString() == "Remove" to the if statement that runs when the cell is clicked
 //Add a button which resets the basket, make checkout do the same
