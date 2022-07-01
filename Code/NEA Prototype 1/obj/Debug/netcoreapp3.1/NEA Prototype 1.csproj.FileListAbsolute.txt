@@ -55,3 +55,4 @@ C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreap
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.InventoryForm.resources
 C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA Prototype 1.csproj.CopyComplete
+C:\Users\Kilia\OneDrive\Desktop\NEA\NEA\Code\NEA Prototype 1\obj\Debug\netcoreapp3.1\NEA_Prototype_1.HomeForm.resources

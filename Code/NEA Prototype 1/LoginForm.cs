@@ -20,5 +20,17 @@ namespace NEA_Prototype_1
             MessageBox.Show("Only existing accounts with level 2 access or higher can create/modify accounts.\nIf you need an account" +
                 " or have forgotten your login details, speak with a manager.","No Account!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Form form = new HomeForm();
+            this.Hide();
+            form.Show();
+        }
+
+        private void lblLoginTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

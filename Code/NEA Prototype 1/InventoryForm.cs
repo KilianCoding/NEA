@@ -14,5 +14,14 @@ namespace NEA_Prototype_1
         {
             InitializeComponent();
         }
+
+        private void btnLoginForm_Click(object sender, EventArgs e)
+        {
+            label1.Text = "poo";
+            Form form = new LoginForm();
+            form.Show();
+            this.Hide();
+            
+        }
     }
 }

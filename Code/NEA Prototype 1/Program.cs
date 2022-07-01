@@ -17,7 +17,8 @@ namespace NEA_Prototype_1
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formTill());
+            Application.Run(new InventoryForm()); //This controls which form is run whne the program starts
+
         }
     }
 }

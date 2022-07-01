@@ -30,7 +30,7 @@ namespace NEA_Prototype_1
         private void InitializeComponent()
         {
             this.btnLogin = new System.Windows.Forms.Button();
-            this.lblLoginTitle = new System.Windows.Forms.Label();
+            this.staticlblLoginTitle = new System.Windows.Forms.Label();
             this.staticlblPassword = new System.Windows.Forms.Label();
             this.staticlblUsername = new System.Windows.Forms.Label();
             this.tbLoginPassword = new System.Windows.Forms.TextBox();
@@ -46,16 +46,18 @@ namespace NEA_Prototype_1
             this.btnLogin.TabIndex = 14;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblLoginTitle
+            // staticlblLoginTitle
             // 
-            this.lblLoginTitle.AutoSize = true;
-            this.lblLoginTitle.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLoginTitle.Location = new System.Drawing.Point(311, 70);
-            this.lblLoginTitle.Name = "lblLoginTitle";
-            this.lblLoginTitle.Size = new System.Drawing.Size(119, 34);
-            this.lblLoginTitle.TabIndex = 13;
-            this.lblLoginTitle.Text = "LOGIN";
+            this.staticlblLoginTitle.AutoSize = true;
+            this.staticlblLoginTitle.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.staticlblLoginTitle.Location = new System.Drawing.Point(311, 70);
+            this.staticlblLoginTitle.Name = "staticlblLoginTitle";
+            this.staticlblLoginTitle.Size = new System.Drawing.Size(119, 34);
+            this.staticlblLoginTitle.TabIndex = 13;
+            this.staticlblLoginTitle.Text = "LOGIN";
+            this.staticlblLoginTitle.Click += new System.EventHandler(this.lblLoginTitle_Click);
             // 
             // staticlblPassword
             // 
@@ -109,7 +111,7 @@ namespace NEA_Prototype_1
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.linkNoAcc);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.lblLoginTitle);
+            this.Controls.Add(this.staticlblLoginTitle);
             this.Controls.Add(this.staticlblPassword);
             this.Controls.Add(this.staticlblUsername);
             this.Controls.Add(this.tbLoginPassword);
@@ -123,7 +125,7 @@ namespace NEA_Prototype_1
 
         #endregion
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblLoginTitle;
+        private System.Windows.Forms.Label staticlblLoginTitle;
         private System.Windows.Forms.Label staticlblPassword;
         private System.Windows.Forms.Label staticlblUsername;
         private System.Windows.Forms.TextBox tbLoginPassword;

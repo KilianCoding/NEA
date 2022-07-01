@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>NEA_Prototype_1</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>NEA_Prototype_1.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

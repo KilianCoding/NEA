@@ -46,7 +46,7 @@ namespace NEA_Prototype_1
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGoHome = new System.Windows.Forms.Button();
             this.btnTestDb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).BeginInit();
             this.SuspendLayout();
@@ -217,15 +217,15 @@ namespace NEA_Prototype_1
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 125;
             // 
-            // button1
+            // btnGoHome
             // 
-            this.button1.Location = new System.Drawing.Point(37, 501);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "login form";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnGoHome.Location = new System.Drawing.Point(37, 501);
+            this.btnGoHome.Name = "btnGoHome";
+            this.btnGoHome.Size = new System.Drawing.Size(94, 29);
+            this.btnGoHome.TabIndex = 8;
+            this.btnGoHome.Text = "Home";
+            this.btnGoHome.UseVisualStyleBackColor = true;
+            this.btnGoHome.Click += new System.EventHandler(this.btnGoHome_Click);
             // 
             // btnTestDb
             // 
@@ -243,7 +243,7 @@ namespace NEA_Prototype_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1109, 600);
             this.Controls.Add(this.btnTestDb);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGoHome);
             this.Controls.Add(this.dgvBasket);
             this.Controls.Add(this.btnItem3);
             this.Controls.Add(this.btnItem2);
@@ -280,7 +280,7 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnPrice;
         private System.Windows.Forms.DataGridViewButtonColumn dgvColumnRemove;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGoHome;
         private System.Windows.Forms.Button btnTestDb;
     }
 }
