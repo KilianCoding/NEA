@@ -19,8 +19,7 @@ namespace NEA_Prototype_1
         {
             Form form = new LoginForm();
             form.Show();
-            this.Hide();
-            
+            this.Hide();         
         }
     }
 }

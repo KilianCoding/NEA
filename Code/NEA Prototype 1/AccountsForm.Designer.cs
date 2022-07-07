@@ -29,68 +29,85 @@
         private void InitializeComponent()
         {
             this.lblCurrentUsername = new System.Windows.Forms.Label();
-            this.lblCurrrentPassword = new System.Windows.Forms.Label();
+            this.lblCurrentPassword = new System.Windows.Forms.Label();
             this.tbNewUsername = new System.Windows.Forms.TextBox();
             this.tbNewPassword = new System.Windows.Forms.TextBox();
             this.btnConfirmChange = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCurrentUsername
             // 
             this.lblCurrentUsername.AutoSize = true;
-            this.lblCurrentUsername.Location = new System.Drawing.Point(268, 93);
+            this.lblCurrentUsername.Location = new System.Drawing.Point(234, 70);
             this.lblCurrentUsername.Name = "lblCurrentUsername";
-            this.lblCurrentUsername.Size = new System.Drawing.Size(134, 20);
+            this.lblCurrentUsername.Size = new System.Drawing.Size(109, 15);
             this.lblCurrentUsername.TabIndex = 0;
             this.lblCurrentUsername.Text = "Current Username: ";
             // 
-            // lblCurrrentPassword
+            // lblCurrentPassword
             // 
-            this.lblCurrrentPassword.AutoSize = true;
-            this.lblCurrrentPassword.Location = new System.Drawing.Point(273, 135);
-            this.lblCurrrentPassword.Name = "lblCurrrentPassword";
-            this.lblCurrrentPassword.Size = new System.Drawing.Size(129, 20);
-            this.lblCurrrentPassword.TabIndex = 1;
-            this.lblCurrrentPassword.Text = "Current Password: ";
+            this.lblCurrentPassword.AutoSize = true;
+            this.lblCurrentPassword.Location = new System.Drawing.Point(234, 102);
+            this.lblCurrentPassword.Name = "lblCurrentPassword";
+            this.lblCurrentPassword.Size = new System.Drawing.Size(106, 15);
+            this.lblCurrentPassword.TabIndex = 1;
+            this.lblCurrentPassword.Text = "Current Password: ";
             // 
             // tbNewUsername
             // 
-            this.tbNewUsername.Location = new System.Drawing.Point(142, 90);
+            this.tbNewUsername.Location = new System.Drawing.Point(124, 68);
+            this.tbNewUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNewUsername.Name = "tbNewUsername";
             this.tbNewUsername.PlaceholderText = "Username";
-            this.tbNewUsername.Size = new System.Drawing.Size(125, 27);
+            this.tbNewUsername.Size = new System.Drawing.Size(110, 23);
             this.tbNewUsername.TabIndex = 2;
             // 
             // tbNewPassword
             // 
-            this.tbNewPassword.Location = new System.Drawing.Point(142, 132);
+            this.tbNewPassword.Location = new System.Drawing.Point(124, 99);
+            this.tbNewPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNewPassword.Name = "tbNewPassword";
             this.tbNewPassword.PlaceholderText = "Password";
-            this.tbNewPassword.Size = new System.Drawing.Size(125, 27);
+            this.tbNewPassword.Size = new System.Drawing.Size(110, 23);
             this.tbNewPassword.TabIndex = 3;
             // 
             // btnConfirmChange
             // 
-            this.btnConfirmChange.Location = new System.Drawing.Point(158, 177);
+            this.btnConfirmChange.Location = new System.Drawing.Point(138, 133);
+            this.btnConfirmChange.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConfirmChange.Name = "btnConfirmChange";
-            this.btnConfirmChange.Size = new System.Drawing.Size(94, 29);
+            this.btnConfirmChange.Size = new System.Drawing.Size(82, 22);
             this.btnConfirmChange.TabIndex = 4;
             this.btnConfirmChange.Text = "Confirm";
             this.btnConfirmChange.UseVisualStyleBackColor = true;
             this.btnConfirmChange.Click += new System.EventHandler(this.btnConfirmChange_Click);
             // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(571, 62);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(75, 23);
+            this.btnHome.TabIndex = 5;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // AccountsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnConfirmChange);
             this.Controls.Add(this.tbNewPassword);
             this.Controls.Add(this.tbNewUsername);
-            this.Controls.Add(this.lblCurrrentPassword);
+            this.Controls.Add(this.lblCurrentPassword);
             this.Controls.Add(this.lblCurrentUsername);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AccountsForm";
             this.Text = "AccountsForm";
+            this.Load += new System.EventHandler(this.AccountsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,9 +116,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblCurrentUsername;
-        private System.Windows.Forms.Label lblCurrrentPassword;
+        private System.Windows.Forms.Label lblCurrentPassword;
         private System.Windows.Forms.TextBox tbNewUsername;
         private System.Windows.Forms.TextBox tbNewPassword;
         private System.Windows.Forms.Button btnConfirmChange;
+        private System.Windows.Forms.Button btnHome;
     }
 }

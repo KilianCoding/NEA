@@ -23,10 +23,9 @@ namespace NEA_Prototype_1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            LoginDetails temp = new LoginDetails();
-            if (tbLoginUsername.Text == temp.Username && tbLoginPassword.Text == temp.Password)
+            if (tbLoginUsername.Text == LoginDetails.Username && tbLoginPassword.Text == LoginDetails.Password) //Checks to see whether the text inputted is the same as the account object
             {
-                temp.LoggedIn = true;
+                LoginDetails.LoggedIn = true;
                 Form form = new HomeForm();
                 this.Hide();
                 form.Show();
@@ -42,23 +41,31 @@ namespace NEA_Prototype_1
 
         }
     }
-    public class LoginDetails
+    public static class LoginDetails //By having a static class, I do not need to instantiate the account object and can therefore access the same class from any part of my program.
+                                     //Normally, you would have to insantiate an object to access it, but this overwrites it's values, so any changes aren't permenant
     {
-        private string username = "a";
-        private string password = "a";
-        private bool loggedIn = false;
+        private static string username;
+        private static string password;
+        private static bool loggedIn;
 
-        public string Username
+        static LoginDetails() //Default details for the account
+        {
+            username = "a";
+            password = "a";
+            loggedIn = false;
+        }
+
+        public static string Username //Getters and setters to access private variables
         {
             get { return username; }
             set { username = value; }
         }
-        public string Password
+        public static string Password
         {
             get { return password; }
             set { password = value; }
         }
-        public bool LoggedIn
+        public static bool LoggedIn
         {
             get { return loggedIn; }
             set { loggedIn = value; }

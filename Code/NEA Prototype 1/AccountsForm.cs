@@ -13,12 +13,28 @@ namespace NEA_Prototype_1
         public AccountsForm()
         {
             InitializeComponent();
+
         }
 
-        private void btnConfirmChange_Click(object sender, EventArgs e)
+        private void btnConfirmChange_Click(object sender, EventArgs e) //Reassigns account details
         {
-            LoginDetails temp = new LoginDetails();
-            temp.Username == tbNewUsername.Text;
+            LoginDetails.Username = tbNewUsername.Text;
+            LoginDetails.Password = tbNewPassword.Text;
+            lblCurrentUsername.Text = "Current username: " + LoginDetails.Username;
+            lblCurrentPassword.Text = "Current password: " + LoginDetails.Password;
+        }
+
+        private void AccountsForm_Load(object sender, EventArgs e) //Shows the current username and password
+        {
+            lblCurrentUsername.Text = "Current username: "+ LoginDetails.Username;
+            lblCurrentPassword.Text = "Current password: "+ LoginDetails.Password;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Form form = new HomeForm();
+            this.Hide();
+            form.Show();
         }
     }
 }
