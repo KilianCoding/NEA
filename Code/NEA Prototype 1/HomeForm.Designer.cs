@@ -32,6 +32,7 @@
             this.btnOpenTill = new System.Windows.Forms.Button();
             this.btnOpenInv = new System.Windows.Forms.Button();
             this.btnOpenLogin = new System.Windows.Forms.Button();
+            this.btnOpenSales = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // staticlblHome
@@ -77,11 +78,23 @@
             this.btnOpenLogin.UseVisualStyleBackColor = true;
             this.btnOpenLogin.Click += new System.EventHandler(this.btnOpenLogin_Click);
             // 
+            // btnOpenSales
+            // 
+            this.btnOpenSales.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOpenSales.Location = new System.Drawing.Point(12, 312);
+            this.btnOpenSales.Name = "btnOpenSales";
+            this.btnOpenSales.Size = new System.Drawing.Size(228, 60);
+            this.btnOpenSales.TabIndex = 4;
+            this.btnOpenSales.Text = "Sales";
+            this.btnOpenSales.UseVisualStyleBackColor = true;
+            this.btnOpenSales.Click += new System.EventHandler(this.btnOpenSales_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOpenSales);
             this.Controls.Add(this.btnOpenLogin);
             this.Controls.Add(this.btnOpenInv);
             this.Controls.Add(this.btnOpenTill);
@@ -99,5 +112,6 @@
         private System.Windows.Forms.Button btnOpenTill;
         private System.Windows.Forms.Button btnOpenInv;
         private System.Windows.Forms.Button btnOpenLogin;
+        private System.Windows.Forms.Button btnOpenSales;
     }
 }

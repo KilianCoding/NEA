@@ -8,19 +8,18 @@ using System.Windows.Forms;
 
 namespace NEA_Prototype_1
 {
-    public partial class InventoryForm : Form
+    public partial class SalesForm : Form
     {
-        public InventoryForm()
+        public SalesForm()
         {
             InitializeComponent();
         }
 
-        private void btnLoginForm_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
-            Form form = new LoginForm();
+            Form form = new HomeForm();
             form.Show();
             this.Hide();
-            
         }
     }
 }

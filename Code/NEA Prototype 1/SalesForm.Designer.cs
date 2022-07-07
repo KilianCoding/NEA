@@ -1,7 +1,6 @@
-﻿
-namespace NEA_Prototype_1
+﻿namespace NEA_Prototype_1
 {
-    partial class InventoryForm
+    partial class SalesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +28,20 @@ namespace NEA_Prototype_1
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnHome = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLoginForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(584, 253);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(94, 29);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // dataGridView1
             // 
@@ -40,28 +49,19 @@ namespace NEA_Prototype_1
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(300, 188);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 1;
             // 
-            // btnLoginForm
-            // 
-            this.btnLoginForm.Location = new System.Drawing.Point(677, 42);
-            this.btnLoginForm.Name = "btnLoginForm";
-            this.btnLoginForm.Size = new System.Drawing.Size(94, 29);
-            this.btnLoginForm.TabIndex = 1;
-            this.btnLoginForm.Text = "Login Form";
-            this.btnLoginForm.UseVisualStyleBackColor = true;
-            this.btnLoginForm.Click += new System.EventHandler(this.btnLoginForm_Click);
-            // 
-            // InventoryForm
+            // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnLoginForm);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "InventoryForm";
-            this.Text = "InventoryForm";
+            this.Controls.Add(this.btnHome);
+            this.Name = "SalesForm";
+            this.Text = "SalesForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -69,7 +69,7 @@ namespace NEA_Prototype_1
 
         #endregion
 
+        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnLoginForm;
     }
 }

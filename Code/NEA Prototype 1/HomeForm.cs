@@ -36,5 +36,12 @@ namespace NEA_Prototype_1
             this.Hide();
             form.Show();
         }
+
+        private void btnOpenSales_Click(object sender, EventArgs e)
+        {
+            Form form = new SalesForm();
+            this.Hide();
+            form.Show();
+        }
     }
 }

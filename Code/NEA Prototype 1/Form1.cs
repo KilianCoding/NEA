@@ -95,7 +95,8 @@ namespace NEA_Prototype_1
             itemName = _itemName;
             itemPrice = _itemPrice; 
         }
-        public string getsetItemName //Variables are private, so can only be accessed through getters and setters
+      
+    /* public string getsetItemName //Variables are private, so can only be accessed through getters and setters
         {
             get { return itemName; }
             set { itemName = value; }
@@ -104,8 +105,7 @@ namespace NEA_Prototype_1
         {
             get { return itemPrice; }
             set { itemPrice = value; }
-        }
+        }*/
     }
 
 
-//Add a button which resets the basket, make checkout do the same
