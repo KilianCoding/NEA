@@ -24,7 +24,9 @@ namespace NEA_Prototype_1
         private void btnLogin_Click(object sender, EventArgs e)
         {
             DatabaseConnectivity user = new DatabaseConnectivity();
-            if (tbLoginUsername.Text == user.ReadEmployee() && tbLoginPassword.Text == "a") //Checks to see whether the text inputted is the same as the account object
+            var (username, password) = user.ReadEmployee(); //Allows me fetch both values as the method returns two values
+           
+            if (tbLoginUsername.Text == username && tbLoginPassword.Text == password) //Checks to see whether the text inputted is the same as the database
             {
                 LoginDetails.LoggedIn = true;
                 Form form = new HomeForm();
@@ -33,7 +35,7 @@ namespace NEA_Prototype_1
             }
             else
             {
-                MessageBox.Show("Your username/password is incorrect\nUsername is"+user.ReadEmployee(), "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Your username/password is incorrect\n"+username + password, "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

@@ -48,6 +48,7 @@ namespace NEA_Prototype_1
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnGoHome = new System.Windows.Forms.Button();
             this.btnTestDb = new System.Windows.Forms.Button();
+            this.btnResetBasket = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasket)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,18 +56,17 @@ namespace NEA_Prototype_1
             // 
             this.staticlblTillTitle.AutoSize = true;
             this.staticlblTillTitle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.staticlblTillTitle.Location = new System.Drawing.Point(176, 12);
+            this.staticlblTillTitle.Location = new System.Drawing.Point(614, -1);
             this.staticlblTillTitle.Name = "staticlblTillTitle";
-            this.staticlblTillTitle.Size = new System.Drawing.Size(46, 35);
+            this.staticlblTillTitle.Size = new System.Drawing.Size(68, 28);
             this.staticlblTillTitle.TabIndex = 0;
-            this.staticlblTillTitle.Text = "Till";
+            this.staticlblTillTitle.Text = "Basket";
             // 
             // btnCheckout
             // 
-            this.btnCheckout.Location = new System.Drawing.Point(143, 200);
-            this.btnCheckout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCheckout.Location = new System.Drawing.Point(125, 150);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(111, 56);
+            this.btnCheckout.Size = new System.Drawing.Size(97, 42);
             this.btnCheckout.TabIndex = 1;
             this.btnCheckout.Text = "Checkout";
             this.btnCheckout.UseVisualStyleBackColor = true;
@@ -74,10 +74,9 @@ namespace NEA_Prototype_1
             // 
             // btnItem1
             // 
-            this.btnItem1.Location = new System.Drawing.Point(37, 72);
-            this.btnItem1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnItem1.Location = new System.Drawing.Point(32, 54);
             this.btnItem1.Name = "btnItem1";
-            this.btnItem1.Size = new System.Drawing.Size(105, 43);
+            this.btnItem1.Size = new System.Drawing.Size(92, 32);
             this.btnItem1.TabIndex = 2;
             this.btnItem1.Text = "Item 1 ";
             this.btnItem1.UseVisualStyleBackColor = true;
@@ -86,19 +85,18 @@ namespace NEA_Prototype_1
             // lblCurrentTotal
             // 
             this.lblCurrentTotal.AutoSize = true;
-            this.lblCurrentTotal.Location = new System.Drawing.Point(143, 176);
+            this.lblCurrentTotal.Location = new System.Drawing.Point(125, 132);
             this.lblCurrentTotal.Name = "lblCurrentTotal";
-            this.lblCurrentTotal.Size = new System.Drawing.Size(117, 20);
+            this.lblCurrentTotal.Size = new System.Drawing.Size(93, 15);
             this.lblCurrentTotal.TabIndex = 3;
             this.lblCurrentTotal.Text = "Current Total: £0";
             // 
             // btnItem2
             // 
             this.btnItem2.AutoSize = true;
-            this.btnItem2.Location = new System.Drawing.Point(149, 72);
-            this.btnItem2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnItem2.Location = new System.Drawing.Point(130, 54);
             this.btnItem2.Name = "btnItem2";
-            this.btnItem2.Size = new System.Drawing.Size(105, 43);
+            this.btnItem2.Size = new System.Drawing.Size(92, 32);
             this.btnItem2.TabIndex = 4;
             this.btnItem2.Text = "Item 2";
             this.btnItem2.UseVisualStyleBackColor = true;
@@ -106,10 +104,9 @@ namespace NEA_Prototype_1
             // 
             // btnItem3
             // 
-            this.btnItem3.Location = new System.Drawing.Point(261, 72);
-            this.btnItem3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnItem3.Location = new System.Drawing.Point(228, 54);
             this.btnItem3.Name = "btnItem3";
-            this.btnItem3.Size = new System.Drawing.Size(105, 43);
+            this.btnItem3.Size = new System.Drawing.Size(92, 32);
             this.btnItem3.TabIndex = 5;
             this.btnItem3.Text = "Item 3";
             this.btnItem3.UseVisualStyleBackColor = true;
@@ -126,12 +123,13 @@ namespace NEA_Prototype_1
             this.dgvColumnItem,
             this.dgvColumnPrice,
             this.dgvColumnRemove});
-            this.dgvBasket.Location = new System.Drawing.Point(408, 12);
+            this.dgvBasket.Location = new System.Drawing.Point(355, 29);
+            this.dgvBasket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBasket.Name = "dgvBasket";
             this.dgvBasket.ReadOnly = true;
             this.dgvBasket.RowHeadersWidth = 51;
             this.dgvBasket.RowTemplate.Height = 29;
-            this.dgvBasket.Size = new System.Drawing.Size(633, 277);
+            this.dgvBasket.Size = new System.Drawing.Size(554, 208);
             this.dgvBasket.TabIndex = 7;
             this.dgvBasket.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBasket_CellClicked);
             // 
@@ -219,9 +217,10 @@ namespace NEA_Prototype_1
             // 
             // btnGoHome
             // 
-            this.btnGoHome.Location = new System.Drawing.Point(37, 501);
+            this.btnGoHome.Location = new System.Drawing.Point(32, 376);
+            this.btnGoHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGoHome.Name = "btnGoHome";
-            this.btnGoHome.Size = new System.Drawing.Size(94, 29);
+            this.btnGoHome.Size = new System.Drawing.Size(82, 22);
             this.btnGoHome.TabIndex = 8;
             this.btnGoHome.Text = "Home";
             this.btnGoHome.UseVisualStyleBackColor = true;
@@ -229,19 +228,31 @@ namespace NEA_Prototype_1
             // 
             // btnTestDb
             // 
-            this.btnTestDb.Location = new System.Drawing.Point(396, 412);
+            this.btnTestDb.Location = new System.Drawing.Point(154, 291);
+            this.btnTestDb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTestDb.Name = "btnTestDb";
-            this.btnTestDb.Size = new System.Drawing.Size(94, 29);
+            this.btnTestDb.Size = new System.Drawing.Size(82, 22);
             this.btnTestDb.TabIndex = 9;
             this.btnTestDb.Text = "Test Database";
             this.btnTestDb.UseVisualStyleBackColor = true;
             this.btnTestDb.Click += new System.EventHandler(this.btnTestDb_Click);
             // 
+            // btnResetBasket
+            // 
+            this.btnResetBasket.Location = new System.Drawing.Point(915, 29);
+            this.btnResetBasket.Name = "btnResetBasket";
+            this.btnResetBasket.Size = new System.Drawing.Size(43, 23);
+            this.btnResetBasket.TabIndex = 10;
+            this.btnResetBasket.Text = "reset";
+            this.btnResetBasket.UseVisualStyleBackColor = true;
+            this.btnResetBasket.Click += new System.EventHandler(this.btnResetBasket_Click);
+            // 
             // formTill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1109, 600);
+            this.ClientSize = new System.Drawing.Size(970, 450);
+            this.Controls.Add(this.btnResetBasket);
             this.Controls.Add(this.btnTestDb);
             this.Controls.Add(this.btnGoHome);
             this.Controls.Add(this.dgvBasket);
@@ -251,7 +262,6 @@ namespace NEA_Prototype_1
             this.Controls.Add(this.btnItem1);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.staticlblTillTitle);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formTill";
             this.Text = "Till";
             this.Load += new System.EventHandler(this.formTill_Load);
@@ -282,6 +292,7 @@ namespace NEA_Prototype_1
         private System.Windows.Forms.DataGridViewButtonColumn dgvColumnRemove;
         private System.Windows.Forms.Button btnGoHome;
         private System.Windows.Forms.Button btnTestDb;
+        private Button btnResetBasket;
     }
 }
 

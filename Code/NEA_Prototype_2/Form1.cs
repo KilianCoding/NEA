@@ -45,10 +45,6 @@ namespace NEA_Prototype_1
                     break;
             }
 
-            /*CheckoutItems temp = new CheckoutItems((btnPressed.Name).Remove(0,3),price); //gets the name of the button that ran the function, removes the first 3 characters (btn) and gives it a price
-            CheckoutList.Add(temp); //Adds the item to the list*/
-
-
             dgvBasket.Rows.Add("ID", btnPressed.Name, price, "Remove"); //Adds a row in the grid
         _ = dgvColumnRemove.UseColumnTextForButtonValue; //Creates a button in the remove column with the text in that column, in this case, remove
 
@@ -65,9 +61,17 @@ namespace NEA_Prototype_1
                 dgvBasket.Rows.RemoveAt(e.RowIndex); //e.RowIndex is the row which contains the button that has been pressed, removes this row
             }
         }
+        private void btnResetBasket_Click(object sender, EventArgs e) //Resets the basket
+        {
+            total = 0;
+            lblCurrentTotal.Text = ("Currrent total: £" + Convert.ToString(total));
+            dgvBasket.Rows.Clear();
+        }
+
         private void btnCheckout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your total is £"+ total.ToString(), "Checkout");
+            btnResetBasket_Click(null, null);
         }
 
         private void formTill_Load(object sender, EventArgs e)
@@ -87,6 +91,8 @@ namespace NEA_Prototype_1
             form.Show();
             this.Close();
         }
+
+
     }
         #endregion
 }
